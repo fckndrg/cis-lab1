@@ -17,7 +17,7 @@ jobs:
         dotnet-version: '8.0.x'
     - run: dotnet restore
     - run: dotnet build --no-restore --configuration Debug
-    - run: dotnet build --no-restore --configuration Debug
+    - run: dotnet test --no-build --configuration Debug
 
     - name: Get Allure history
       uses: actions/checkout@v4
